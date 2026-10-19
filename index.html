@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>The Nine Sons of the Dragon: Qing Dynasty Succession Crisis (1675–1722)</title>
+
+  <!-- Google Fonts for Luxury Imperial Typography with Fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Cinzel+Decorative:wght@700&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Reveal.js Stylesheets (Local with CDN fallback) -->
+  <link rel="stylesheet" href="assets/reveal/dist/reveal.css" onerror="this.onerror=null;this.href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css';">
+  <link rel="stylesheet" href="assets/reveal/dist/theme/black.css" onerror="this.onerror=null;this.href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/black.min.css';">
+  <link rel="stylesheet" href="presentation.css">
+</head>
+<body>
+
+  <!-- Ambient Visual Canvases -->
+  <div class="imperial-canvas-bg"></div>
+  <div class="imperial-grid-pattern"></div>
+
+  <!-- Persistent Top HUD Bar -->
+  <header id="imperial-hud">
+    <div class="hud-brand">
+      <span class="seal-icon">大清</span>
+      <span>THE NINE SONS OF THE DRAGON</span>
+      <span style="color:var(--border-gold-muted);">|</span>
+      <span id="hud-slide-title" style="color:var(--text-secondary); font-size:12px;">Prologue</span>
+    </div>
+
+    <div class="hud-timeline-indicator">
+      <span style="font-size:11px; color:var(--text-muted);">TIMELINE:</span>
+      <span id="hud-year-val" class="hud-year">1675–1722</span>
+      <span style="color:var(--border-gold-muted);">•</span>
+      <span id="hud-era-val" class="hud-era">Kangxi Era</span>
+    </div>
+
+    <div class="hud-controls">
+      <button id="hud-sound-btn" class="hud-btn" onclick="toggleSound()" title="Toggle Atmospheric Imperial Sound">🔕 Sound: OFF</button>
+      <button class="hud-btn" onclick="openModal('help-modal')" title="Keyboard Shortcuts & Guide">⌨ Help (?)</button>
+      <button class="hud-btn" onclick="toggleFullScreen()" title="Toggle Fullscreen (F)">⛶ Fullscreen</button>
+    </div>
+  </header>
+
+  <!-- Reveal.js Slide Deck -->
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ============================================================
+           SLIDE 1: TITLE & HOOK
+           ============================================================ -->
+      <section data-state="slide-title" style="padding-top:40px;">
+        <div style="text-align:center; max-width:1050px; margin:0 auto;">
+          <div style="margin-bottom:12px;">
+            <span class="badge badge-red" style="font-size:0.85em; letter-spacing:2px; padding:4px 14px;">
+              THE REAL-LIFE SUCCESSION · CHINA'S DEADLIEST ROYAL COLD WAR
+            </span>
+          </div>
+
+          <h1 style="font-size:2.8em; margin:10px 0 16px 0; color:#fff; text-shadow:0 4px 25px rgba(212,175,55,0.3);">
+            THE NINE SONS OF THE DRAGON
+          </h1>
+          <div style="font-family:var(--font-calligraphy); font-size:1.8em; color:var(--text-gold); letter-spacing:10px; margin-bottom:12px;">
+            九子夺嫡
+          </div>
+
+          <p class="slide-subtitle" style="font-size:1.2em; max-width:850px; margin:0 auto 24px auto;">
+            The Imperial Succession Crisis That Reshaped China (1675–1722):<br>
+            <span style="color:var(--text-gold);">Absolute power, filial betrayal, and the birth of the secret succession system.</span>
+          </p>
+
+          <!-- Core stats pill strip -->
+          <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:16px; max-width:880px; margin:0 auto 28px auto;">
+            <div class="stat-pill">
+              <div class="num">47</div>
+              <div class="label">Years of Political Intrigue</div>
+            </div>
+            <div class="stat-pill">
+              <div class="num">35</div>
+              <div class="label">Imperial Sons of Kangxi</div>
+            </div>
+            <div class="stat-pill">
+              <div class="num">9</div>
+              <div class="label">Princes Contending</div>
+            </div>
+            <div class="stat-pill">
+              <div class="num">1</div>
+              <div class="label">Absolute Dragon Throne</div>
+            </div>
+          </div>
+
+          <div class="imperial-card card-gold" style="max-width:840px; margin:0 auto; padding:12px 20px; font-size:0.9em; background:rgba(18,18,26,0.9);">
+            <div style="color:var(--text-gold); font-weight:700; margin-bottom:4px; font-family:var(--font-display);">
+              THE NARRATIVE HOOK
+            </div>
+            <p style="margin:0; color:var(--text-secondary); line-height:1.45;">
+              Before <em>Succession</em> and <em>House of the Dragon</em>, the Forbidden City was the stage for history’s ultimate high-stakes family war. An aging autocrat who reigned for six decades, an anointed heir driven mad by waiting, and eight brilliant brothers playing a ruthless 3D chess game of stealth, sorcery, and military coups.
+            </p>
+          </div>
+
+          <div style="margin-top:20px; font-size:0.8em; color:var(--text-muted);">
+            Use <strong style="color:var(--border-gold);">Spacebar / Arrow Keys</strong> to advance slides • Press <strong style="color:var(--border-gold);">S</strong> for Speaker Notes
+          </div>
+        </div>
+
+        <aside class="notes">
+          Welcome everyone. Today we are diving into one of the most astonishing political thrillers in world history: The Nine Princes Contending for the Succession in Qing Dynasty China. 
+          Think of this as the real-life historical blueprint of HBO's Succession combined with House of the Dragon—except the kingdom is an empire of 150 million people, and losing didn't just mean getting fired; it meant poison, imprisonment, and having your name erased from imperial history.
+        </aside>
+      </section>
+
+
+      <!-- ============================================================
+           SLIDE 2: THE STAGE & THE PATRIARCH (EMPEROR KANGXI)
+           ============================================================ -->
+      <section data-state="slide-kangxi">
+        <h2>
+          <span>The Stage & The Patriarch</span>
+          <span class="cn-sub">康熙大帝与制度死结</span>
+        </h2>
+        <div class="slide-subtitle">China’s Sun King and the collision of two irreconcilable imperial traditions.</div>
+
+        <div class="col-image-text" style="align-items:start;">
+          <!-- Left: Portrait -->
+          <div class="portrait-frame" style="height:480px;">
+            <img src="assets/images/kangxi_portrait.jpg" alt="Portrait of Emperor Kangxi in Court Dress">
+            <div class="portrait-caption">
+              <strong>Emperor Kangxi (玄烨)</strong><br>
+              Reigned 1661–1722 (61 Years) · Father of 35 Sons
+            </div>
+          </div>
+
+          <!-- Right: Analysis of Root Cause -->
+          <div>
+            <div class="imperial-card card-gold" style="margin-bottom:14px;">
+              <h3 style="color:var(--text-gold);">The Patriarch: China's "Sun King"</h3>
+              <p style="font-size:0.86em; line-height:1.45; margin-bottom:8px;">
+                Crowned at age 7, Kangxi reigned for <strong>61 years</strong>—the longest in Chinese history. He was a polymath, military mastermind, and Confucian sage who crushed the Revolt of the Three Feudatories, subdued the Western Mongols, and secured Taiwan. Yet his greatest defeat occurred inside his own nursery.
+              </p>
+              <div style="display:flex; gap:8px;">
+                <span class="badge badge-gold">35 Imperial Sons</span>
+                <span class="badge badge-red">24 Reached Adulthood</span>
+                <span class="badge badge-jade">High Qing Golden Era</span>
+              </div>
+            </div>
+
+            <!-- The Collision -->
+            <div class="imperial-card card-vermilion fragment" data-fragment-index="1">
+              <h3 style="color:#ff8b8b;">The Institutional Collision: A Built-In Time Bomb</h3>
+              <div class="versus-container" style="margin-top:8px;">
+                <div style="background:rgba(255,255,255,0.03); padding:10px; border-radius:6px; font-size:0.8em; line-height:1.4;">
+                  <strong style="color:var(--text-gold); display:block; margin-bottom:4px;">1. Han Confucian Primogeniture</strong>
+                  Kangxi designated his second son, <strong>Yinreng (age 1)</strong>, as Crown Prince in 1675 to win over the Han majority. Yinreng spent <strong>33 years</strong> as heir-in-waiting.
+                </div>
+                <div class="versus-badge">VS</div>
+                <div style="background:rgba(255,255,255,0.03); padding:10px; border-radius:6px; font-size:0.8em; line-height:1.4;">
+                  <strong style="color:#ff7675; display:block; margin-bottom:4px;">2. Manchu Meritocratic Tradition</strong>
+                  Nomadic steppe culture (八旗八议) selected rulers based on military courage and governance talent among adult warrior princes, not birth order.
+                </div>
+              </div>
+            </div>
+
+            <div class="imperial-quote fragment" data-fragment-index="2" style="margin-top:14px; font-size:0.84em;">
+              "To keep an imperial prince in waiting for over three decades is to place a dagger at the father’s throat and paint a target on the son’s back."
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          Kangxi was a titan of an emperor, ruling China longer than Louis XIV ruled France. But he created an institutional disaster. By adopting the Han Chinese concept of primogeniture, he declared his second son, Yinreng, heir when the boy was barely a toddler.
+          Meanwhile, Manchu imperial blood valued merit and martial glory above all. Kangxi gave his other elder sons military commands, provincial tax duties, and elite banners. As these brothers grew up into seasoned generals and administrators, they looked at the pampered Crown Prince and asked: 'Why him?'
+        </aside>
+      </section>
+
+
+      <!-- ============================================================
+           SLIDE 3: THE BOARD & THE 9 CONTENDERS (INTERACTIVE FACTION MAP)
+           ============================================================ -->
+      <section data-state="slide-board">
+        <h2>
+          <span>The Board: 9 Contenders, 5 Factions</span>
+          <span class="cn-sub">九子五党 · 权力图谱</span>
+        </h2>
+        <div class="slide-subtitle">How 9 out of 24 adult princes polarized into five lethal factions.</div>
+
+        <!-- Faction Selector Buttons -->
+        <div class="faction-pill-group">
+          <button class="faction-tab-btn active" data-faction="1" onclick="selectFaction(1)">Faction 1: The Broken Heir (Prince 2)</button>
+          <button class="faction-tab-btn" data-faction="2" onclick="selectFaction(2)">Faction 2: Eldest & Scholar (Princes 1 & 3)</button>
+          <button class="faction-tab-btn" data-faction="3" onclick="selectFaction(3)">Faction 3: Stealth Bureaucrats (Princes 4 & 13)</button>
+          <button class="faction-tab-btn" data-faction="4" onclick="selectFaction(4)">Faction 4: The 8th Prince Party (Princes 8, 9, 10)</button>
+          <button class="faction-tab-btn" data-faction="5" onclick="selectFaction(5)">Faction 5: The Grand General (Prince 14)</button>
+        </div>
+
+        <!-- 5 Mini-Cards representing the Board -->
+        <div class="faction-grid-container" style="margin-bottom:14px;">
+          <div class="faction-mini-card active-card" data-faction="1" onclick="selectFaction(1)">
+            <div class="prince-num">Prince 2</div>
+            <div class="prince-name">Yinreng (胤礽)</div>
+            <div class="prince-archetype">The Broken Heir</div>
+            <span class="badge badge-red" style="margin-top:4px;">Heir Apparent</span>
+          </div>
+
+          <div class="faction-mini-card" data-faction="2" onclick="selectFaction(2)">
+            <div class="prince-num">Princes 1 & 3</div>
+            <div class="prince-name">Yinzhi & Yinzhi</div>
+            <div class="prince-archetype">Eldest Warrior & Academic</div>
+            <span class="badge badge-gold" style="margin-top:4px;">Warlord / Scholar</span>
+          </div>
+
+          <div class="faction-mini-card" data-faction="3" onclick="selectFaction(3)">
+            <div class="prince-num">Princes 4 & 13</div>
+            <div class="prince-name">Yinzhen & Yinxiang</div>
+            <div class="prince-archetype">The Shadow Bureaucrats</div>
+            <span class="badge badge-jade" style="margin-top:4px;">Ultimate Victor</span>
+          </div>
+
+          <div class="faction-mini-card" data-faction="4" onclick="selectFaction(4)">
+            <div class="prince-num">Princes 8, 9, 10</div>
+            <div class="prince-name">Yinsi, Yintang, Yin'e</div>
+            <div class="prince-archetype">The Political Machine</div>
+            <span class="badge badge-gold" style="margin-top:4px;">Court Favorite</span>
+          </div>
+
+          <div class="faction-mini-card" data-faction="5" onclick="selectFaction(5)">
+            <div class="prince-num">Prince 14</div>
+            <div class="prince-name">Yinti (胤禵)</div>
+            <div class="prince-archetype">The Grand General</div>
+            <span class="badge badge-red" style="margin-top:4px;">Military Favorite</span>
+          </div>
+        </div>
+
+        <!-- Interactive Dynamic Detail Box -->
+        <div id="faction-detail-content" class="imperial-card card-gold" style="min-height:165px; background:rgba(14,14,20,0.95);">
+          <!-- Content dynamically loaded by selectFaction() -->
+        </div>
+
+        <div style="font-size:0.75em; color:var(--text-muted); margin-top:8px;">
+          💡 <em>Click any faction above to reveal their inner circle, strategy, fatal flaw, and historical outcome.</em>
+        </div>
+
+        <aside class="notes">
+          Let's look at the chessboard. Twenty-four sons survived, but nine entered the arena. 
+          Notice how distinct their power sources are: Prince 2 had constitutional legitimacy. Princes 1 and 14 had military commands. Prince 8 built a massive political caucus that controlled the bureaucracy. Prince 9 had unimaginable merchant wealth. 
+          And standing quietly in the corner was Prince 4, Yinzhen—the man everyone overlooked because he looked like an austere monk.
+        </aside>
+      </section>
+
+
+      <!-- ============================================================
+           SLIDE 4: CRISIS I — THE FALL OF THE HEIR (1708)
+           ============================================================ -->
+      <section data-state="slide-crisis-1">
+        <h2>
+          <span>Crisis I: The Fall of the Heir (1708)</span>
+          <span class="cn-sub">一废太子 · 塞罕坝惊变</span>
+        </h2>
+        <div class="slide-subtitle">Royal paranoia, midnight espionage, and the sorcery of the eldest prince.</div>
+
+        <div class="grid-2col">
+          <!-- Left: Narrative Timeline -->
+          <div class="timeline-stepper">
+            <div class="step-item active-step">
+              <span class="step-year">September 1708 · Saihanba Hunting Grounds</span>
+              <p style="font-size:0.84em; line-height:1.4; margin:2px 0;">
+                During the annual imperial hunt at Rehe, Kangxi’s beloved 18th son fell gravely ill and died. While Kangxi wept, <strong>Crown Prince Yinreng showed chilling indifference</strong>. Kangxi publicly berated his lack of filial piety and fraternal love.
+              </p>
+            </div>
+
+            <div class="step-item fragment" data-fragment-index="1">
+              <span class="step-year">Midnight Espionage & The Tent Peeping</span>
+              <p style="font-size:0.84em; line-height:1.4; margin:2px 0;">
+                Terrified of his father’s growing hostility, Yinreng crept to Kangxi's royal tent in the dead of night, parting the fabric to peer inside. Kangxi awoke, gripped by <strong>paralyzing terror of an impending assassination</strong>.
+              </p>
+            </div>
+
+            <div class="step-item fragment" data-fragment-index="2">
+              <span class="step-year">The Deposition Edict</span>
+              <p style="font-size:0.84em; line-height:1.4; margin:2px 0;">
+                Weeping before the imperial banners, Kangxi declared: <em>"Yinreng is violent, tyrannical, and unfit to rule."</em> The Crown Prince was stripped of all regalia and bound in chains.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: The Sorcery Scandal -->
+          <div>
+            <div class="imperial-card card-vermilion fragment" data-fragment-index="3" style="margin-bottom:14px;">
+              <h3 style="color:#ff8b8b;">The Fatal Blunder of Prince 1</h3>
+              <p style="font-size:0.83em; line-height:1.45; margin-bottom:8px;">
+                Believing his moment had arrived, the Eldest Prince (Yinzhi) stepped forward with chilling audacity:
+              </p>
+              <div class="imperial-quote" style="margin:4px 0 8px 0; font-size:0.82em;">
+                "Father, if you wish to put Yinreng to death, it need not be carried out by your imperial hand. Your servant can execute him for you."
+              </div>
+              <p style="font-size:0.82em; color:var(--text-secondary); line-height:1.4;">
+                Kangxi was horrified by his eldest son’s bloodlust and complete lack of brotherhood.
+              </p>
+            </div>
+
+            <div class="imperial-card card-gold fragment" data-fragment-index="4">
+              <h3 style="color:var(--text-gold);">The Voodoo Sorcery Exposed (魇胜之术)</h3>
+              <p style="font-size:0.82em; line-height:1.45; margin:0;">
+                Seizing the opening, <strong>3rd Prince Yinzhi</strong> exposed a shocking secret: Prince 1 had hired a Mongolian lama (Batur Dalai) to bury cursed voodoo dolls beneath Yinreng’s residence to drive him insane. 
+                Kangxi investigated and found the cursed figurines. <strong>Prince 1 was stripped of his princely titles and sentenced to lifetime solitary confinement.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          In September 1708, the dam broke during a royal hunting trip in Inner Mongolia. Yinreng's psychological strain broke him. He was seen peering into Kangxi's tent at night. To an absolute monarch, there is only one reason an adult son sneaks around your bedroom: regicide.
+          Kangxi deposed him on the spot. But Prince 1, the eldest, made a fatal miscalculation. He basically said: 'Father, if you want your son dead, let me be your hitman.' Kangxi was disgusted. And when Prince 3 revealed that Prince 1 had used dark occult witchcraft dolls against his own brother, Prince 1 was locked away forever.
+        </aside>
+      </section>
+
+
+      <!-- ============================================================
+           SLIDE 5: THE OVERPLAY OF THE 8TH PRINCE (1708–1709)
+           ============================================================ -->
+      <section data-state="slide-overplay-8">
+        <h2>
+          <span>The Overplay of the 8th Prince</span>
+          <span class="cn-sub">八大王之局 · 众推八爷</span>
+        </h2>
+        <div class="slide-subtitle">The consensus trap: Why total court popularity is an autocrat’s greatest nightmare.</div>
+
+        <div class="col-image-text" style="align-items:start;">
+          <!-- Left: Portrait of Yinsi -->
+          <div class="portrait-frame" style="height:480px;">
+            <img src="assets/images/yinsi_portrait.jpg" alt="Portrait of Yinsi, Prince Lian">
+            <div class="portrait-caption">
+              <strong>8th Prince Yinsi (胤禩)</strong><br>
+              "The Virtuous Prince" (八贤王) · The Charismatic Mastermind
+            </div>
+          </div>
+
+          <!-- Right: The Trap & Psychology -->
+          <div>
+            <div class="imperial-card card-gold" style="margin-bottom:12px;">
+              <h3 style="color:var(--text-gold);">The Open Recommendation Challenge (Nov 1708)</h3>
+              <p style="font-size:0.85em; line-height:1.45; margin:0;">
+                Stunned by the collapse of two elder sons, Kangxi issued an unprecedented challenge to the court: 
+                <em>"Let all princes and civil and military officials nominate a prince to be the new Crown Prince. Whomsoever you recommend by consensus, I will appoint."</em>
+              </p>
+            </div>
+
+            <div class="imperial-card card-vermilion fragment" data-fragment-index="1" style="margin-bottom:12px;">
+              <h3 style="color:#ff8b8b;">The Landslide: A Coordinated Machine</h3>
+              <p style="font-size:0.84em; line-height:1.45; margin:0;">
+                Led by Grand Councillor Tong Guowei (Kangxi's maternal uncle) and Chancellor Ma Qi, virtually the entire court submitted petitions nominating <strong>8th Prince Yinsi</strong>. Yinsi was charismatic, polite, generous, and backed by the financial muscle of Prince 9.
+              </p>
+            </div>
+
+            <!-- The Autocrat's Terror -->
+            <div class="imperial-card card-jade fragment" data-fragment-index="2">
+              <h3 style="color:#72e6a7;">The Autocrat's Realization: The Oligarchy Threat</h3>
+              <p style="font-size:0.84em; line-height:1.45; margin-bottom:6px;">
+                Instead of being pleased, Kangxi was terrified. He realized Prince 8 had constructed an organized political faction that controlled the palace bureaucracy:
+              </p>
+              <div class="imperial-quote" style="margin:4px 0; font-size:0.82em;">
+                "Yinsi’s faction is so powerful that ministers defer to him rather than to Me. If he ascends the throne, the Sovereign will become a puppet of the court oligarchy!"
+              </div>
+            </div>
+
+            <div class="fragment" data-fragment-index="3" style="margin-top:10px; font-size:0.82em; color:var(--text-secondary); background:rgba(255,255,255,0.04); padding:8px 12px; border-radius:6px; border-left:3px solid var(--imperial-yellow);">
+              ⚡ <strong>The Counter-Strike (1709):</strong> Kangxi repudiated the court's vote, stripped Prince 8 of his titles, and reinstated Yinreng as Crown Prince to re-establish royal equilibrium. Prince 8's open bid for power was permanently broken.
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          Slide 5 contains one of the most brilliant political science lessons in the entire crisis: The Coalition Trap.
+          Kangxi asked his court to vote. It seemed democratic, but it was a trap. When 90% of the ministers voted for Prince 8, Kangxi didn't think, 'Wow, my son is so popular!' He thought: 'This boy has built a deep state inside my government. If he becomes emperor, he answers to them, not to my dynasty.'
+          In an autocracy, open consensus looks like treason.
+        </aside>
+      </section>
+
+
+      <!-- ============================================================
+           SLIDE 6: CRISIS II — THE FINAL FALL (1712)
+           ============================================================ -->
+      <section data-state="slide-crisis-2">
+        <h2>
+          <span>Crisis II: The Final Fall (1712)</span>
+          <span class="cn-sub">二废太子 · 绝不立储</span>
+        </h2>
+        <div class="slide-subtitle">A broken prince, an aborted coup, and the ten-year imperial silence.</div>
+
+        <div class="grid-2col">
+          <!-- Left: The Second Deposition -->
+          <div>
+            <div class="imperial-card card-vermilion" style="margin-bottom:16px;">
+              <h3 style="color:#ff8b8b;">Reinstated Without Trust (1709–1712)</h3>
+              <p style="font-size:0.85em; line-height:1.45; margin-bottom:8px;">
+                Yinreng was restored to the Eastern Palace, but the damage was irreversible. Aware that Kangxi had only reinstated him to block Prince 8, Yinreng became increasingly paranoid and vengeful.
+              </p>
+              <ul style="font-size:0.82em; color:var(--text-secondary); line-height:1.45; padding-left:18px; margin:0;">
+                <li>Purged officials who had supported his brothers.</li>
+                <li>Suffered recurrent bouts of mania and violent delirium.</li>
+                <li>Formed secret cabals with military commanders to force an early succession.</li>
+              </ul>
+            </div>
+
+            <div class="imperial-card card-gold fragment" data-fragment-index="1">
+              <h3 style="color:var(--text-gold);">The Aborted Coup of 1712 (托合齐逼宫案)</h3>
+              <p style="font-size:0.84em; line-height:1.45; margin:0;">
+                In late 1711, Kangxi’s imperial spies intercepted correspondence between Yinreng and <strong>Tuoba (Commander of Beijing Gendarmerie)</strong> plotting an armed palace coup to force Kangxi into retirement as "Retired Emperor" (太上皇).
+                <br><br>
+                Kangxi executed the conspirators immediately. In October 1712, <strong>Yinreng was deposed for the second and final time</strong>, locked inside Xian'an Palace (咸安宫) under armed watch until his death.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: The Decade of Silence -->
+          <div class="fragment" data-fragment-index="2">
+            <div class="imperial-card card-jade" style="height:100%; display:flex; flex-direction:column; justify-content:center;">
+              <div style="font-family:var(--font-calligraphy); font-size:2.2em; color:var(--imperial-yellow); text-align:center; margin-bottom:8px;">
+                誓不复立储位
+              </div>
+              <h3 style="color:var(--text-gold); text-align:center; margin-bottom:14px;">The Decade of Silence (1712–1722)</h3>
+              
+              <p style="font-size:0.86em; line-height:1.5; color:var(--text-secondary);">
+                Deeply scarred by forty years of betrayal, Kangxi swore a solemn oath to Heaven: <strong>He would never again designate a Crown Prince during his lifetime.</strong>
+              </p>
+
+              <div style="background:rgba(0,0,0,0.4); padding:14px; border-radius:6px; border-left:3px solid var(--border-gold); margin:14px 0; font-size:0.82em; line-height:1.45;">
+                <strong>The Power Vacuum:</strong>
+                For the final ten years of Kangxi’s reign, the Dragon Throne had no declared heir. Court officials scrutinized every glance, every hunting escort, and every seasonal sacrificial duty for imperial clues. The Cold War turned covert.
+              </div>
+
+              <div style="display:flex; justify-content:space-around; text-align:center; margin-top:8px;">
+                <div>
+                  <div style="font-size:1.4em; color:var(--vermilion-bright); font-weight:800;">10</div>
+                  <div style="font-size:0.7em; color:var(--text-muted);">Years Without an Heir</div>
+                </div>
+                <div>
+                  <div style="font-size:1.4em; color:var(--imperial-yellow); font-weight:800;">0</div>
+                  <div style="font-size:0.7em; color:var(--text-muted);">Public Declarations</div>
+                </div>
+                <div>
+                  <div style="font-size:1.4em; color:#72e6a7; font-weight:800;">2</div>
+                  <div style="font-size:0.7em; color:var(--text-muted);">Secret Frontrunners</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          After Yinreng was deposed a second time in 1712, Kangxi was an emotionally broken old man. He had raised Yinreng by hand, but power poisoned everything.
+          From 1712 to 1722, for ten whole years, the largest empire on Earth had no designated successor. Kangxi refused to name anyone, because he knew that whoever he named would immediately become the target of the others.
+          This created a vacuum where every gesture was decoded like Soviet Kremlinology.
+        </aside>
+      </section>
+
+
+      <!-- ============================================================
+           SLIDE 7: THE MASTER OF STEALTH (PRINCE 4's STRATEGY)
+           ============================================================ -->
+      <section data-state="slide-stealth-4">
+        <h2>
+          <span>The Master of Stealth: Prince 4</span>
+          <span class="cn-sub">四爷胤禛 · 韬光养晦之术</span>
+        </h2>
+        <div class="slide-subtitle">How Yinzhen played the dutiful Buddhist hermit while capturing the empire's vital chokepoints.</div>
+
+        <div class="col-image-text" style="align-items:start;">
+          <!-- Left: Painting of Yinzhen reading -->
+          <div class="portrait-frame" style="height:480px;">
+            <img src="assets/images/yongzheng_reading.jpg" alt="Prince Yinzhen Reading in Plain Robes">
+            <div class="portrait-caption">
+              <strong>Prince 4 Yinzhen (胤禛)</strong><br>
+              "The Hermit of Broken Screen" (破尘居士) · Master of Asymmetric Politics
+            </div>
+          </div>
+
+          <!-- Right: Strategy Analysis -->
+          <div>
+            <div class="grid-2col" style="gap:14px; margin-bottom:12px;">
+              <!-- Pillar 1 -->
+              <div class="imperial-card card-gold">
+                <h4 style="color:var(--text-gold); margin-bottom:4px;">1. The Hermit Disguise</h4>
+                <p style="font-size:0.79em; line-height:1.4; margin:0;">
+                  While other princes spent fortunes entertaining court officials, Prince 4 styled himself as a detached Chan Buddhist hermit, planting crops at Yuanmingyuan and composing poetry. He appeared utterly devoid of imperial ambition.
+                </p>
+              </div>
+
+              <!-- Pillar 2 -->
+              <div class="imperial-card card-vermilion">
+                <h4 style="color:#ff8b8b; margin-bottom:4px;">2. The Uncompromising Fixer</h4>
+                <p style="font-size:0.79em; line-height:1.4; margin:0;">
+                  Nicknamed the "Cold-Faced Prince" (冷面王), he volunteered for the dirtiest, most thankless administrative jobs: auditing embezzled national grain reserves, recovering treasury deficits, and managing flood relief.
+                </p>
+              </div>
+            </div>
+
+            <!-- The Strategic Chokepoints -->
+            <div class="imperial-card card-jade fragment" data-fragment-index="1" style="margin-bottom:12px;">
+              <h4 style="color:#72e6a7; margin-bottom:6px;">3. The Two Strategic Chokepoints</h4>
+              <div class="grid-2col" style="font-size:0.8em; line-height:1.4;">
+                <div style="background:rgba(255,255,255,0.03); padding:8px 10px; border-radius:4px;">
+                  <strong style="color:var(--imperial-yellow);">Longkodo (隆科多):</strong><br>
+                  Commander of the Beijing Gendarmerie (步军统领). Controlled the 9 gates of Beijing and 20,000 elite capital guards.
+                </div>
+                <div style="background:rgba(255,255,255,0.03); padding:8px 10px; border-radius:4px;">
+                  <strong style="color:var(--imperial-yellow);">Nian Gengyao (年羹尧):</strong><br>
+                  Governor-General of Sichuan & Shaanxi. Controlled the food, ammunition, and logistical lifeline of Prince 14’s western army!
+                </div>
+              </div>
+            </div>
+
+            <!-- Versus 14th Prince -->
+            <div class="imperial-card card-gold fragment" data-fragment-index="2" style="font-size:0.8em; line-height:1.4;">
+              <strong style="color:var(--text-gold);">Contrast with 14th Prince Yinti:</strong><br>
+              In 1718, Prince 14 was named "Great General-Commander" (抚远大将军王) and dispatched with 300,000 troops to fight in Tibet. The entire empire assumed Prince 14 was the designated heir. But while Prince 14 commanded armies 1,500 miles away, <strong>Prince 4 was sitting at his dying father’s bedside in Beijing.</strong>
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          Now look at the masterclass of Prince 4, the future Yongzheng Emperor.
+          Chinese strategy has a phrase: 'Tao Guang Yang Hui'—hide your brightness, cultivate in darkness. Prince 4 called himself 'The Broken Screen Hermit.' He dressed like a monk, recited Buddhist sutras, and farmed cabbages in his garden. He convinced everyone he didn't want the crown.
+          Meanwhile, who did he align with? Not talkative ministers, but Longkodo, who controlled the physical gates of Beijing, and Nian Gengyao, who controlled the grain supply of Prince 14's army in the west. When the moment came, he owned the board.
+        </aside>
+      </section>
+
+
+      <!-- ============================================================
+           SLIDE 8: THE WINTER CLIMAX (THE MIDNIGHT SUCCESSION & FORGERY DEBUNKED)
+           ============================================================ -->
+      <section data-state="slide-midnight-8">
+        <h2>
+          <span>The Midnight Succession (Dec 1722)</span>
+          <span class="cn-sub">畅春园之夜 · 传位于四子公案</span>
+        </h2>
+        <div class="slide-subtitle">A dying emperor, locked gates, and the definitive debunking of the imperial forgery myth.</div>
+
+        <div class="col-text-image">
+          <!-- Left: Succession & Decoder -->
+          <div>
+            <div class="imperial-card card-gold" style="margin-bottom:12px; font-size:0.84em; line-height:1.45;">
+              <strong style="color:var(--imperial-yellow);">December 20, 1722 (Kangxi's 61st Year, 11th Lunar Month):</strong><br>
+              Kangxi collapsed at Changchun Garden (畅春园) outside Beijing. On his deathbed, Kangxi summoned seven princes and Longkodo. Longkodo proclaimed the final decree appointing 4th Prince Yinzhen as heir. Beijing's 9 gates were locked down immediately.
+            </div>
+
+            <!-- Interactive Myth Buster Decoder -->
+            <div class="myth-decoder">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span style="font-family:var(--font-display); color:var(--text-gold); font-size:0.9em; font-weight:700;">
+                  🔍 THE FORGERY INVESTIGATOR
+                </span>
+                <div style="display:flex; gap:6px;">
+                  <button class="hud-btn myth-tab-btn active" data-mode="myth" onclick="setMythMode('myth')">1. The Legend</button>
+                  <button class="hud-btn myth-tab-btn" data-mode="chinese" onclick="setMythMode('chinese')">2. Chinese Syntax</button>
+                  <button class="hud-btn myth-tab-btn" data-mode="manchu" onclick="setMythMode('manchu')">3. Manchu Proof</button>
+                </div>
+              </div>
+
+              <!-- Dynamic Content Slot -->
+              <div id="myth-dynamic-content">
+                <!-- Loaded via setMythMode() -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Authentic Will Artifact -->
+          <div class="portrait-frame" style="height:480px;">
+            <img src="assets/images/kangxi_testament.jpg" alt="Kangxi's Last Will and Testament preserved in First Historical Archives of China">
+            <div class="portrait-caption">
+              <strong>Kangxi's Last Will (康熙遗诏)</strong><br>
+              Preserved in Beijing Archives · Written in Parallel Chinese & Manchu Script
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          On a freezing winter night in December 1722, Kangxi died at Changchun Garden. Longkodo locked the gates of the capital, read the will, and Yongzheng took the throne.
+          Immediately, wild conspiracy theories erupted: Did Yongzheng alter Kangxi's will from 'Pass to 14th Son' (传位十四子) to 'Pass to 4th Son' (传位于四子)?
+          Let's debunk this with cold hard historical facts:
+          First, imperial decrees wrote 'Imperial Fourth Son' (皇四子), not 'Pass to Fourth Son'. You can't turn 'Imperial Fourteenth Son' into 'Imperial To Fourth Son'!
+          Second, the Qing official preposition was traditional '於', not simplified '于'.
+          And third—the smoking gun: All Qing imperial edicts were bilingual. In Manchu script, 14th is 'juwan duici' while 4th is 'duici'. You cannot change 'juwan duici' into 'duici' with two strokes of a brush!
+        </aside>
+      </section>
+
+
+      <!-- ============================================================
+           SLIDE 9: THE RECKONING & PURGE (1722–1726)
+           ============================================================ -->
+      <section data-state="slide-purge-9">
+        <h2>
+          <span>The Reckoning & The Purge</span>
+          <span class="cn-sub">雷霆清算 · 阿其那与塞思黑</span>
+        </h2>
+        <div class="slide-subtitle">How Emperor Yongzheng dismantled his brothers’ network with surgical ruthlessness.</div>
+
+        <div class="grid-3col">
+          <!-- Column 1: The Ally Rewarded -->
+          <div class="imperial-card card-jade">
+            <div class="portrait-frame" style="height:190px; margin-bottom:10px;">
+              <img src="assets/images/yinxiang_portrait.jpg" alt="Portrait of Yinxiang, Prince Yi">
+            </div>
+            <h4 style="color:#72e6a7; margin-bottom:4px;">1. The Loyal Brother Rewarded</h4>
+            <div style="font-size:0.8em; line-height:1.4; color:var(--text-secondary);">
+              <strong>13th Prince Yinxiang</strong> was granted the rare title of hereditary <em>"Iron-Cap Prince Yi"</em> (怡亲王). Entrusted with the imperial treasury, public works, and military planning, he served as Yongzheng’s indispensable de facto Prime Minister.
+            </div>
+          </div>
+
+          <!-- Column 2: The Warrior Disarmed -->
+          <div class="imperial-card card-gold">
+            <div class="portrait-frame" style="height:190px; margin-bottom:10px;">
+              <img src="assets/images/yinti_portrait.jpg" alt="Portrait of Yinti, 14th Prince">
+            </div>
+            <h4 style="color:var(--text-gold); margin-bottom:4px;">2. The Warrior Disarmed</h4>
+            <div style="font-size:0.8em; line-height:1.4; color:var(--text-secondary);">
+              <strong>14th Prince Yinti</strong> was summoned back to Beijing under the pretext of mourning his father. Intercepted en route by Nian Gengyao, his military command was revoked. He was stripped of ranks and confined to Kangxi’s Jingling Mausoleum under lifelong house arrest.
+            </div>
+          </div>
+
+          <!-- Column 3: The Nemesis Crushed -->
+          <div class="imperial-card card-vermilion">
+            <div class="portrait-frame" style="height:190px; margin-bottom:10px;">
+              <img src="assets/images/yongzheng_portrait.jpg" alt="Portrait of Emperor Yongzheng in Imperial Court Robes">
+            </div>
+            <h4 style="color:#ff8b8b; margin-bottom:4px;">3. The Total Annihilation</h4>
+            <div style="font-size:0.78em; line-height:1.35; color:var(--text-secondary);">
+              Between 1724 and 1726, Yongzheng systematically dismantled the 8th Prince faction:
+              <ul style="padding-left:14px; margin:4px 0;">
+                <li><strong>8th Prince Yinsi</strong> stripped of clan status, renamed to <em>"Akesina"</em> (阿其那 / "Dog/Cur"). Died in prison (1726).</li>
+                <li><strong>9th Prince Yintang</strong> renamed to <em>"Sesihe"</em> (塞思黑 / "Pig/Worm"). Died in prison (1726).</li>
+                <li><strong>10th Prince Yin'e</strong> imprisoned; <strong>3rd Prince Yinzhi</strong> stripped of titles.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="imperial-quote fragment" data-fragment-index="1" style="margin-top:14px; font-size:0.85em;">
+          "Yongzheng worked twenty hours a day, red-inked tens of thousands of memorials, and stamped out corruption with terrifying precision. To his ministers, he was an incorruptible sage-king; to his brothers, he was the Angel of Death."
+        </div>
+
+        <aside class="notes">
+          Once on the throne, Yongzheng acted with surgical precision. 
+          To his loyal partner, 13th Prince Yinxiang, he gave unprecedented honors and power, making him the supreme administrator of China.
+          To his rival brother Prince 14, he neutralized him without firing a single shot—recalling him for the funeral and simply never letting him leave.
+          And for Princes 8 and 9? He stripped them of their imperial surname, expelled them from the ancestral records, and forced them to take humiliating Manchu names meaning 'Dog' and 'Pig'. Both died within months in prison. The cold war had ended with absolute annihilation.
+        </aside>
+      </section>
+
+
+      <!-- ============================================================
+           SLIDE 10: HISTORICAL LEGACY (THE BOX BEHIND THE PLAQUE)
+           ============================================================ -->
+      <section data-state="slide-plaque-10">
+        <h2>
+          <span>The Box Behind the Plaque</span>
+          <span class="cn-sub">秘密立储 · 正大光明之谜</span>
+        </h2>
+        <div class="slide-subtitle">How Yongzheng engineered a revolutionary succession system to cure the dynastic disease.</div>
+
+        <div class="col-image-text" style="align-items:start;">
+          <!-- Left: Palace of Heavenly Purity -->
+          <div class="portrait-frame" style="height:480px;">
+            <img src="assets/images/palace_qianqing.jpg" alt="Palace of Heavenly Purity and the Zheng Da Guang Ming Plaque">
+            <div class="portrait-caption">
+              <strong>Palace of Heavenly Purity (乾清宫)</strong><br>
+              The Grand Throne Room of the Forbidden City
+            </div>
+          </div>
+
+          <!-- Right: Secret Succession Architecture -->
+          <div>
+            <div class="imperial-card card-gold" style="margin-bottom:14px;">
+              <h3 style="color:var(--text-gold);">The Structural Innovation: Secret Succession (秘密立储)</h3>
+              <p style="font-size:0.85em; line-height:1.45; margin-bottom:8px;">
+                Yongzheng realized that open succession inherently creates a fatal dual power structure: an anointed heir inevitably forms a rival court, attracting corrupt courtiers and triggering royal paranoia.
+              </p>
+              
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; font-size:0.8em; line-height:1.4;">
+                <div style="background:rgba(255,255,255,0.03); padding:8px 10px; border-radius:4px;">
+                  <strong style="color:var(--text-gold);">Copy 1: The Emperor's Person</strong><br>
+                  A handwritten imperial decree sealed inside a brocade pouch carried constantly by the Emperor.
+                </div>
+                <div style="background:rgba(255,255,255,0.03); padding:8px 10px; border-radius:4px;">
+                  <strong style="color:var(--imperial-yellow);">Copy 2: Behind the Plaque</strong><br>
+                  An identical decree locked in an iron box, placed high behind the "Zheng Da Guang Ming" plaque.
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Plaque Simulation -->
+            <div class="secret-box-container">
+              <div id="imperial-plaque-trigger" class="plaque-visual" title="Click to inspect the secret casket">
+                <div class="plaque-characters">正大光明</div>
+                <div style="font-size:0.7em; color:var(--text-gold); letter-spacing:2px; margin-top:4px;">
+                  ZHENG DA GUANG MING · "FAIR AND HONORABLE"
+                </div>
+              </div>
+
+              <div id="plaque-action-text" style="font-size:0.75em; color:var(--text-muted); margin-top:8px;">
+                ▲ Click the Imperial Plaque above to access the hidden succession vault
+              </div>
+
+              <!-- Hidden Drawer revealed on click -->
+              <div id="secret-box-drawer" class="secret-drawer">
+                <div style="font-size:0.9em; color:var(--imperial-yellow); font-weight:bold; margin-bottom:4px;">
+                  📜 THE SECRET SUCCESSION DECREE (秘密立储朱谕)
+                </div>
+                <p style="font-size:0.82em; color:#fff; line-height:1.4; margin:0;">
+                  <em>"Upon the Emperor’s passing, princes and grand councilors assemble before the throne. Both decrees are retrieved and compared. If identical, the new sovereign is acclaimed immediately."</em>
+                </p>
+                <div style="font-size:0.78em; color:#72e6a7; margin-top:6px;">
+                  ✓ Enabled the peaceful rise of Emperor Qianlong (弘历) and stabilized the High Qing for 150 years.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="notes">
+          Yongzheng didn't just win power; he reformed the institutional architecture of Chinese civilization.
+          He recognized the core dilemma: If you name an heir openly, courtiers immediately begin flattering the prince and undermining the current ruler. But if you name no one, the empire erupts into civil war when you die.
+          So Yongzheng invented the Secret Succession System: Two matching copies. One on the emperor's body; one locked in an iron box behind the famous 'Zheng Da Guang Ming' plaque in the Forbidden City.
+          When the emperor died, the box was lowered in front of the entire court. If the two matching edicts agreed, the new emperor was crowned on the spot.
+        </aside>
+      </section>
+
+
+      <!-- ============================================================
+           SLIDE 11: KEY TAKEAWAYS (LESSONS ON POWER & GOVERNANCE)
+           ============================================================ -->
+      <section data-state="slide-takeaways-11">
+        <h2>
+          <span>Strategic Lessons: Power & Governance</span>
+          <span class="cn-sub">权力博弈之现代启示</span>
+        </h2>
+        <div class="slide-subtitle">Analytical takeaways from China’s deadliest succession Cold War.</div>
+
+        <div class="grid-2col" style="gap:18px;">
+          <!-- Lesson 1 -->
+          <div class="imperial-card card-gold">
+            <h4 style="color:var(--text-gold); margin-bottom:6px;">1. The Succession System Dilemma</h4>
+            <p style="font-size:0.84em; line-height:1.45; color:var(--text-secondary); margin:0;">
+              <strong>Premature transparency creates dual power centers.</strong> An anointed successor inevitably becomes an alternative gravity well for lobbying and rebellion, while an unannounced succession creates explosive instability. Yongzheng’s secret system aligned incentives by eliminating premature lobbying.
+            </p>
+          </div>
+
+          <!-- Lesson 2 -->
+          <div class="imperial-card card-vermilion">
+            <h4 style="color:#ff8b8b; margin-bottom:6px;">2. The Coalition Trap</h4>
+            <p style="font-size:0.84em; line-height:1.45; color:var(--text-secondary); margin:0;">
+              <strong>Consensus is not safety in an autocracy.</strong> Prince 8’s overwhelming popularity with court ministers alienated the sole ultimate decision-maker: Emperor Kangxi. In a centralized structure, an heir loved by subordinates appears as a threat to executive authority.
+            </p>
+          </div>
+
+          <!-- Lesson 3 -->
+          <div class="imperial-card card-jade">
+            <h4 style="color:#72e6a7; margin-bottom:6px;">3. The Quiet Executor Wins</h4>
+            <p style="font-size:0.84em; line-height:1.45; color:var(--text-secondary); margin:0;">
+              <strong>Solve the patriarch’s hardest headaches.</strong> While his brothers threw banquets and formed political caucuses, Prince 4 audited treasury shortfalls, retrieved embezzled grain, and managed disaster relief. He made himself indispensable to state survival.
+            </p>
+          </div>
+
+          <!-- Lesson 4 -->
+          <div class="imperial-card card-gold">
+            <h4 style="color:var(--imperial-yellow); margin-bottom:6px;">4. Chokepoints Beat Remote Glory</h4>
+            <p style="font-size:0.84em; line-height:1.45; color:var(--text-secondary); margin:0;">
+              <strong>Control the infrastructure of decision-making.</strong> Prince 14 held 300,000 troops 1,500 miles away, but Prince 4 controlled the 9 city gates and the army's grain supply. In any sudden leadership transition, proximity to the command room beats remote military fanfare.
+            </p>
+          </div>
+        </div>
+
+        <div class="imperial-quote fragment" data-fragment-index="1" style="margin-top:18px; text-align:center; font-size:0.9em;">
+          "The loudest contender in the room campaigns for the applause of the crowd; the victor secures the locks on the door."
+        </div>
+
+        <aside class="notes">
+          To wrap up, let's step back and look at the enduring principles of power demonstrated by this 47-year drama:
+          First, open succession creates a toxic dual court.
+          Second, beware the coalition trap—in a company or country led by a strong patriarch, looking too popular with middle management makes you look like a mutineer.
+          Third, administrative competence beats PR. Prince 4 solved real fiscal crises.
+          And fourth, control the physical and logistical chokepoints.
+        </aside>
+      </section>
+
+
+      <!-- ============================================================
+           SLIDE 12: EPILOGUE & EXECUTIVE DOSSIER
+           ============================================================ -->
+      <section data-state="slide-epilogue-12">
+        <h2>
+          <span>Epilogue: The Fate of the Nine Contenders</span>
+          <span class="cn-sub">九王结局 · 历史回响</span>
+        </h2>
+        <div class="slide-subtitle">The definitive historical tally of the Nine Princes of the Kangxi Emperor.</div>
+
+        <div style="overflow-x:auto; background:rgba(18,18,26,0.95); border:1px solid var(--border-gold-muted); border-radius:6px; padding:8px;">
+          <table style="width:100%; border-collapse:collapse; font-size:0.75em; line-height:1.35; color:var(--text-secondary);">
+            <thead>
+              <tr style="border-bottom:1px solid var(--border-gold); color:var(--text-gold); font-family:var(--font-display);">
+                <th style="padding:8px; text-align:left;">Prince</th>
+                <th style="padding:8px; text-align:left;">Name</th>
+                <th style="padding:8px; text-align:left;">Peak Title / Role</th>
+                <th style="padding:8px; text-align:left;">Primary Faction</th>
+                <th style="padding:8px; text-align:left;">Ultimate Historical Fate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:6px 8px; font-weight:bold; color:#fff;">1st Prince</td>
+                <td style="padding:6px 8px;">Yinzhi (胤禔)</td>
+                <td style="padding:6px 8px;">Prince Zhi (直郡王)</td>
+                <td style="padding:6px 8px;">Eldest / Military</td>
+                <td style="padding:6px 8px; color:#ff8b8b;">Imprisoned for sorcery 1708; died in confinement 1734.</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.02);">
+                <td style="padding:6px 8px; font-weight:bold; color:var(--imperial-yellow);">2nd Prince</td>
+                <td style="padding:6px 8px;">Yinreng (胤礽)</td>
+                <td style="padding:6px 8px;">Crown Prince (皇太子)</td>
+                <td style="padding:6px 8px;">The Anointed Heir</td>
+                <td style="padding:6px 8px; color:#ff8b8b;">Twice deposed; died under house arrest in Xian'an Palace (1725).</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:6px 8px; font-weight:bold; color:#fff;">3rd Prince</td>
+                <td style="padding:6px 8px;">Yinzhi (胤祉)</td>
+                <td style="padding:6px 8px;">Prince Cheng (诚亲王)</td>
+                <td style="padding:6px 8px;">The Scholar Faction</td>
+                <td style="padding:6px 8px; color:#c2c2ce;">Stripped of princely title by Yongzheng in 1730; died in 1732.</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(46,204,113,0.08);">
+                <td style="padding:6px 8px; font-weight:bold; color:#72e6a7;">4th Prince</td>
+                <td style="padding:6px 8px;">Yinzhen (胤禛)</td>
+                <td style="padding:6px 8px;">Prince Yong ➔ <strong>Emperor Yongzheng</strong></td>
+                <td style="padding:6px 8px;">Stealth Reformers</td>
+                <td style="padding:6px 8px; color:#72e6a7; font-weight:bold;">VICTOR. Reigned 1722–1735. Revolutionized imperial governance.</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:6px 8px; font-weight:bold; color:#ff8b8b;">8th Prince</td>
+                <td style="padding:6px 8px;">Yinsi (胤禩)</td>
+                <td style="padding:6px 8px;">Prince Lian (廉亲王)</td>
+                <td style="padding:6px 8px;">Court Aristocracy</td>
+                <td style="padding:6px 8px; color:#ff8b8b;">Renamed "Akesina" (Dog); died in prison under solitary confinement (1726).</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.02);">
+                <td style="padding:6px 8px; font-weight:bold; color:#ff8b8b;">9th Prince</td>
+                <td style="padding:6px 8px;">Yintang (胤禟)</td>
+                <td style="padding:6px 8px;">Prince of 3rd Rank (贝子)</td>
+                <td style="padding:6px 8px;">The Financier</td>
+                <td style="padding:6px 8px; color:#ff8b8b;">Renamed "Sesihe" (Pig); died under harsh prison detention (1726).</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:6px 8px; font-weight:bold; color:#c2c2ce;">10th Prince</td>
+                <td style="padding:6px 8px;">Yin'e (胤䄉)</td>
+                <td style="padding:6px 8px;">Prince Dun (敦郡王)</td>
+                <td style="padding:6px 8px;">Aristocratic Muscle</td>
+                <td style="padding:6px 8px; color:#c2c2ce;">Stripped of rank and imprisoned in 1724; released by Qianlong in 1737.</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(46,204,113,0.08);">
+                <td style="padding:6px 8px; font-weight:bold; color:#72e6a7;">13th Prince</td>
+                <td style="padding:6px 8px;">Yinxiang (胤祥)</td>
+                <td style="padding:6px 8px;">Prince Yi (怡亲王)</td>
+                <td style="padding:6px 8px;">Stealth Reformers</td>
+                <td style="padding:6px 8px; color:#72e6a7; font-weight:bold;">Granted Iron-Cap hereditary status; Yongzheng’s revered prime minister.</td>
+              </tr>
+              <tr>
+                <td style="padding:6px 8px; font-weight:bold; color:var(--text-gold);">14th Prince</td>
+                <td style="padding:6px 8px;">Yinti (胤禵)</td>
+                <td style="padding:6px 8px;">Grand General-Commander (抚远大将军)</td>
+                <td style="padding:6px 8px;">Western Army</td>
+                <td style="padding:6px 8px; color:#c2c2ce;">Stripped of army; confined at imperial tombs until pardoned by Qianlong.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+          <div style="font-size:0.82em; color:var(--text-gold);">
+            <strong>Presentation Concluded</strong> · Thank you for exploring China's Deadliest Imperial Cold War.
+          </div>
+          <div style="display:flex; gap:10px;">
+            <button class="hud-btn" onclick="Reveal.slide(0)">⏮ Back to Beginning</button>
+            <button class="hud-btn" onclick="openModal('help-modal')">❓ Q&A & Navigation Guide</button>
+          </div>
+        </div>
+
+        <aside class="notes">
+          And there you have it: The complete tally of the Nine Sons of the Dragon.
+          Notice how the winners and losers separated:
+          Princes 1, 2, 8, and 9 pushed too hard, too publicly, or with too much entitlement, and they paid with their freedom and lives.
+          Prince 4 and Prince 13 played the game with total discretion, fiscal discipline, and patience, winning not just the dragon throne, but laying the foundation for the high watermark of the Qing Dynasty under Emperor Qianlong.
+          I'll now open the floor for any questions or discussions!
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Help & Navigation Modal -->
+  <div id="help-modal" class="modal-overlay" onclick="if(event.target===this) closeModal('help-modal')">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="color:var(--text-gold); margin:0;">Imperial Presentation Guide</h3>
+        <button class="modal-close" onclick="closeModal('help-modal')">✕</button>
+      </div>
+      <div style="font-size:0.85em; line-height:1.5;">
+        <h4 style="color:#fff; margin-bottom:6px;">Keyboard Shortcuts</h4>
+        <ul style="padding-left:20px; color:var(--text-secondary); margin-bottom:14px;">
+          <li><strong style="color:var(--border-gold);">Space / → / ↓</strong> : Advance to next slide or fragment</li>
+          <li><strong style="color:var(--border-gold);">← / ↑</strong> : Return to previous slide or fragment</li>
+          <li><strong style="color:var(--border-gold);">S</strong> : Open Speaker Notes console (view presentation script)</li>
+          <li><strong style="color:var(--border-gold);">F</strong> : Toggle Fullscreen presentation mode</li>
+          <li><strong style="color:var(--border-gold);">O / ESC</strong> : Toggle Slide Overview (grid map)</li>
+          <li><strong style="color:var(--border-gold);">?</strong> : Open this help dialog</li>
+        </ul>
+
+        <h4 style="color:#fff; margin-bottom:6px;">Interactive Elements</h4>
+        <ul style="padding-left:20px; color:var(--text-secondary); margin:0;">
+          <li><strong>Slide 3:</strong> Click faction tabs to explore each prince's dossier and alliances.</li>
+          <li><strong>Slide 8:</strong> Use the investigator buttons to debunk the "14 to 4" myth across Chinese and Manchu texts.</li>
+          <li><strong>Slide 10:</strong> Click the "正大光明" plaque to reveal the secret imperial succession vault.</li>
+          <li><strong>Top HUD:</strong> Toggle synthesized ceremonial bells/sound effects via the top bar button.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reveal.js Scripts with CDN Fallbacks -->
+  <script src="assets/reveal/dist/reveal.js"></script>
+  <script>
+    if (typeof Reveal === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"><\/script>');
+    }
+  </script>
+  <script src="assets/reveal/plugin/notes/notes.js"></script>
+  <script>
+    if (typeof RevealNotes === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/notes/notes.min.js"><\/script>');
+    }
+  </script>
+  <script src="presentation.js"></script>
+</body>
+</html>
